@@ -5,11 +5,15 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build --public-url ./"
+    "build": "parcel build index.html --public-url ./"
   },
   "author": "Yurii Ilkevych (rufiktcl@gmail.com)",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.12.0"
+    "parcel": "^2.12.0",
+    "sharp": "^0.31.3"
+  },
+  "dependencies": {
+    "swiper": "^11.1.14"
   }
 }

@@ -1,13 +1,2062 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Source+Code+Pro:wght@200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.css"
+    />
+    <link rel="stylesheet" href="./styles/personal-normalize.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
     <title>Food Wagon</title>
-</head>
-<body>
-    <header></header>
-    <main></main>
-    <footer></footer>    
-</body>
+  </head>
+  <body>
+    <header>
+      <div class="container header">
+        <div>
+          <a class="logo" href="#">
+            <img
+              class="logo-svg"
+              aria-label="logo"
+              width="28"
+              height="29"
+              src="./images/svg/logo.svg"
+            />
+            <p>food</p>
+            <p>wa<span>G</span>on</p>
+          </a>
+        </div>
+        <div class="block-location">
+          <p>Deliver to:</p>
+          <a href="#">
+            <svg width="14" height="25">
+              <use href="./images/svg/sprite.svg#location"></use>
+            </svg>
+            Current Location
+          </a>
+          <p>Mohammadpur Bus Stand, Dhaka</p>
+        </div>
+        <nav class="navigation">
+          <a href="#">
+            <svg width="18" height="18">
+              <use href="./images/svg/sprite.svg#search"></use>
+            </svg>
+            Search Food
+          </a>
+          <button type="button">
+            <img width="16" height="18" src="./images/svg/user.svg" />
+            <p>Login</p>
+          </button>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="section-hero">
+        <div class="container hero">
+          <div class="hero-card">
+            <h1>Are you starving?</h1>
+            <p>Within a few clicks, find meals that are accessible near you</p>
+            <form class="hero-form">
+              <div class="wrapper-label">
+                <label class="label-delivery">
+                  <input type="radio" name="delivery" checked />
+                  <div>
+                    <svg class="icon-delivery" width="23" height="18">
+                      <use href="./images/svg/sprite.svg#delivery"></use>
+                    </svg>
+                    <p class="hero-radio">Delivery</p>
+                  </div>
+                </label>
+                <label class="label-delivery">
+                  <input type="radio" name="delivery" />
+                  <div>
+                    <svg class="icon-delivery" width="16" height="18">
+                      <use href="./images/svg/sprite.svg#pickup"></use>
+                    </svg>
+                    <p class="hero-radio">Pickup</p>
+                  </div>
+                </label>
+              </div>
+              <div class="label-adress">
+                <svg class="icon-location" width="18" height="34">
+                  <use href="./images/svg/sprite.svg#location"></use>
+                </svg>
+                <input
+                  autocomplete="off"
+                  placeholder="Enter Your Address"
+                  type="text"
+                  name="text"
+                  aria-label="text"
+                />
+                <button type="button">
+                  <svg width="14" height="14">
+                    <use href="./images/svg/sprite.svg#search"></use>
+                  </svg>
+                  Find Food
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="hero-image"></div>
+          <div class="hero-image-boxshadow"></div>
+        </div>
+      </section>
+      <section>
+        <div class="container sale-menu">
+          <ul class="list-sale-menu">
+            <li>
+              <a href="#">
+                <div class="wrapper-picture">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/dish1.jpg?width=400   400w,
+                        ./images/dish1.jpg?width=800   800w,
+                        ./images/dish1.jpg?width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish1.jpg?as=avif&width=400   400w,
+                        ./images/dish1.jpg?as=avif&width=800   800w,
+                        ./images/dish1.jpg?as=avif&width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish1.jpg?as=webp&width=400   400w,
+                        ./images/dish1.jpg?as=webp&width=800   800w,
+                        ./images/dish1.jpg?as=webp&width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/webp"
+                    />
+                    <img
+                      width="357"
+                      height="301"
+                      alt="first dish"
+                      src="./images/dish1.jpg"
+                    />
+                  </picture>
+                  <div class="dish-discount">
+                    <p>15</p>
+                    <div>
+                      <p>%</p>
+                      <p>off</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Greys Vage</p>
+                <p class="sale-menu-p-decor">6 Days Remaining</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="wrapper-picture">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/dish2.jpg?width=400   400w,
+                        ./images/dish2.jpg?width=800   800w,
+                        ./images/dish2.jpg?width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish2.jpg?as=avif&width=400   400w,
+                        ./images/dish2.jpg?as=avif&width=800   800w,
+                        ./images/dish2.jpg?as=avif&width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish2.jpg?as=webp&width=400   400w,
+                        ./images/dish2.jpg?as=webp&width=800   800w,
+                        ./images/dish2.jpg?as=webp&width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/webp"
+                    />
+                    <img
+                      width="357"
+                      height="301"
+                      alt="first dish"
+                      src="./images/dish1.jpg"
+                    />
+                  </picture>
+                  <div class="dish-discount">
+                    <p>10</p>
+                    <div>
+                      <p>%</p>
+                      <p>off</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Greys Vage</p>
+                <p class="sale-menu-p-decor">6 Days Remaining</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="wrapper-picture">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/dish3.jpg?width=400   400w,
+                        ./images/dish3.jpg?width=800   800w,
+                        ./images/dish3.jpg?width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish3.jpg?as=avif&width=400   400w,
+                        ./images/dish3.jpg?as=avif&width=800   800w,
+                        ./images/dish3.jpg?as=avif&width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish3.jpg?as=webp&width=400   400w,
+                        ./images/dish3.jpg?as=webp&width=800   800w,
+                        ./images/dish3.jpg?as=webp&width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                      type="image/webp"
+                    />
+                    <img
+                      width="357"
+                      height="301"
+                      alt="first dish"
+                      src="./images/dish1.jpg"
+                    />
+                  </picture>
+                  <div class="dish-discount">
+                    <p>25</p>
+                    <div>
+                      <p>%</p>
+                      <p>off</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Greys Vage</p>
+                <p class="sale-menu-p-decor">7 Days Remaining</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="wrapper-picture">
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/dish4.jpg?width=400   400w,
+                        ./images/dish4.jpg?width=800   800w,
+                        ./images/dish4.jpg?width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                  (max-width: 1200px) 800px, 
+                  1600px"
+                      type="image/jpg"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish4.jpg?as=avif&width=400   400w,
+                        ./images/dish4.jpg?as=avif&width=800   800w,
+                        ./images/dish4.jpg?as=avif&width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                  (max-width: 1200px) 800px, 
+                  1600px"
+                      type="image/avif"
+                    />
+                    <source
+                      srcset="
+                        ./images/dish4.jpg?as=webp&width=400   400w,
+                        ./images/dish4.jpg?as=webp&width=800   800w,
+                        ./images/dish4.jpg?as=webp&width=1600 1600w
+                      "
+                      sizes="(max-width: 600px) 400px, 
+                  (max-width: 1200px) 800px, 
+                  1600px"
+                      type="image/webp"
+                    />
+                    <img
+                      width="357"
+                      height="301"
+                      alt="first dish"
+                      src="./images/dish1.jpg"
+                    />
+                  </picture>
+                  <div class="dish-discount">
+                    <p>20</p>
+                    <div>
+                      <p>%</p>
+                      <p>off</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Greys Vage</p>
+                <p class="sale-menu-p-decor">8 Days Remaining</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-how-does-it-work">
+        <div class="shadow-how-does-it-work"></div>
+        <div class="container how-does-it-work">
+          <h2>How does it work</h2>
+          <ul class="list-how-work">
+            <li>
+              <img
+                width="167"
+                height="192"
+                class="svg"
+                src="./images/svg/big-location.png?width=400"
+                alt="icon location"
+              />
+              <h3>Select location</h3>
+              <p>Choose the location where your food will be delivered.</p>
+            </li>
+            <li>
+              <img
+                width="167"
+                height="192"
+                class="svg"
+                src="./images/svg/big-order.png?width=400"
+                alt="icon order"
+              />
+              <h3>Choose order</h3>
+              <p>Check over hundreds of menus to pick your favorite food</p>
+            </li>
+            <li>
+              <img
+                width="153"
+                height="192"
+                class="svg"
+                src="./images/svg/big-pay.png?width=400"
+                alt="icon pay"
+              />
+              <h3>Pay advanced</h3>
+              <p>
+                It's quick, safe, and simple. Select several methods of payment
+              </p>
+            </li>
+            <li>
+              <img
+                width="193"
+                height="192"
+                class="svg"
+                src="./images/svg/big-meals.png?width=400"
+                alt="icon meals"
+              />
+              <h3>Enjoy meals</h3>
+              <p>Food is made and delivered directly to your home.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section>
+        <div class="container popolar-items">
+          <div class="container-swiper">
+            <h2>Popular items</h2>
+            <div class="swiper">
+              <ul class="list-popular-items swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/popular-items3.jpg?width=400   400w,
+                          ./images/popular-items3.jpg?width=800   800w,
+                          ./images/popular-items3.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="image/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items3.jpg?as=avif&width=400   400w,
+                          ./images/popular-items3.jpg?as=avif&width=800   800w,
+                          ./images/popular-items3.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items3.jpg?as=webp&width=400   400w,
+                          ./images/popular-items3.jpg?as=webp&width=800   800w,
+                          ./images/popular-items3.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/webp"
+                      />
+                      <img
+                        width="283"
+                        height="283"
+                        src="./images/popular-items2.jpg"
+                        alt="Dancake"
+                      />
+                    </picture>
+                    <h3>Dancake</h3>
+                    <div>
+                      <svg width="14" height="22">
+                        <use href="./images/svg/sprite.svg#location"></use>
+                      </svg>
+                      <p>Cake World</p>
+                    </div>
+                    <p>$1.99</p>
+                    <button type="button">Order Now</button>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/popular-items1.jpg?width=400   400w,
+                          ./images/popular-items1.jpg?width=800   800w,
+                          ./images/popular-items1.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="image/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items1.jpg?as=avif&width=400   400w,
+                          ./images/popular-items1.jpg?as=avif&width=800   800w,
+                          ./images/popular-items1.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items1.jpg?as=webp&width=400   400w,
+                          ./images/popular-items1.jpg?as=webp&width=800   800w,
+                          ./images/popular-items1.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/webp"
+                      />
+                      <img
+                        width="283"
+                        height="283"
+                        src="./images/popular-items1.jpg"
+                        alt="Cheese Burger"
+                      />
+                    </picture>
+                    <h3>Cheese Burger</h3>
+                    <div>
+                      <svg width="14" height="22">
+                        <use href="./images/svg/sprite.svg#location"></use>
+                      </svg>
+                      <p>Burger Arena</p>
+                    </div>
+                    <p>$3.88</p>
+                    <button type="button">Order Now</button>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/popular-items2.jpg?width=400   400w,
+                          ./images/popular-items2.jpg?width=800   800w,
+                          ./images/popular-items2.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="image/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items2.jpg?as=avif&width=400   400w,
+                          ./images/popular-items2.jpg?as=avif&width=800   800w,
+                          ./images/popular-items2.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items2.jpg?as=webp&width=400   400w,
+                          ./images/popular-items2.jpg?as=webp&width=800   800w,
+                          ./images/popular-items2.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/webp"
+                      />
+                      <img
+                        width="283"
+                        height="283"
+                        src="./images/popular-items2.jpg"
+                        alt="Toffe's Cake"
+                      />
+                    </picture>
+                    <h3>Toffe's Cake</h3>
+                    <div>
+                      <svg width="14" height="22">
+                        <use href="./images/svg/sprite.svg#location"></use>
+                      </svg>
+                      <p>Top Sticks</p>
+                    </div>
+                    <p>$4.00</p>
+                    <button type="button">Order Now</button>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/popular-items3.jpg?width=400   400w,
+                          ./images/popular-items3.jpg?width=800   800w,
+                          ./images/popular-items3.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="image/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items3.jpg?as=avif&width=400   400w,
+                          ./images/popular-items3.jpg?as=avif&width=800   800w,
+                          ./images/popular-items3.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items3.jpg?as=webp&width=400   400w,
+                          ./images/popular-items3.jpg?as=webp&width=800   800w,
+                          ./images/popular-items3.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/webp"
+                      />
+                      <img
+                        width="283"
+                        height="283"
+                        src="./images/popular-items2.jpg"
+                        alt="Dancake"
+                      />
+                    </picture>
+                    <h3>Dancake</h3>
+                    <div>
+                      <svg width="14" height="22">
+                        <use href="./images/svg/sprite.svg#location"></use>
+                      </svg>
+                      <p>Cake World</p>
+                    </div>
+                    <p>$1.99</p>
+                    <button type="button">Order Now</button>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/popular-items4.jpg?width=400   400w,
+                          ./images/popular-items4.jpg?width=800   800w,
+                          ./images/popular-items4.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="image/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items4.jpg?as=avif&width=400   400w,
+                          ./images/popular-items4.jpg?as=avif&width=800   800w,
+                          ./images/popular-items4.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items4.jpg?as=webp&width=400   400w,
+                          ./images/popular-items4.jpg?as=webp&width=800   800w,
+                          ./images/popular-items4.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/webp"
+                      />
+                      <img
+                        width="283"
+                        height="283"
+                        src="./images/popular-items4.jpg"
+                        alt="Crispy Sandwitch"
+                      />
+                    </picture>
+                    <h3>Crispy Sandwitch</h3>
+                    <div>
+                      <svg width="14" height="22">
+                        <use href="./images/svg/sprite.svg#location"></use>
+                      </svg>
+                      <p>Fastfood Dine</p>
+                    </div>
+                    <p>$3.00</p>
+                    <button type="button">Order Now</button>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/popular-items5.jpg?width=400   400w,
+                          ./images/popular-items5.jpg?width=800   800w,
+                          ./images/popular-items5.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="image/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items5.jpg?as=avif&width=400   400w,
+                          ./images/popular-items5.jpg?as=avif&width=800   800w,
+                          ./images/popular-items5.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/popular-items5.jpg?as=webp&width=400   400w,
+                          ./images/popular-items5.jpg?as=webp&width=800   800w,
+                          ./images/popular-items5.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                        type="type/webp"
+                      />
+                      <img
+                        width="283"
+                        height="283"
+                        src="./images/popular-items5.jpg"
+                        alt="Thai  Soup"
+                      />
+                    </picture>
+                    <h3>Thai Soup</h3>
+                    <div>
+                      <svg width="14" height="22">
+                        <use href="./images/svg/sprite.svg#location"></use>
+                      </svg>
+                      <p>Foody man</p>
+                    </div>
+                    <p>$2.79</p>
+                    <button type="button">Order Now</button>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container section-featured-restaurants">
+          <h3>Featured Restaurants</h3>
+          <ul class="list-featured-restaurants">
+            <li>
+              <a href="#">
+                <div class="sticker-block">
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#discount"></use>
+                    </svg>
+                    <p>20% off</p>
+                  </div>
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#time"></use>
+                    </svg>
+                    <p>Fast</p>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/foodworld.jpg?width=400   400w,
+                      ./images/foodworld.jpg?width=800   800w,
+                      ./images/foodworld.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/foodworld.jpg?as=avif&width=400   400w,
+                      ./images/foodworld.jpg?as=avif&width=800   800w,
+                      ./images/foodworld.jpg?as=avif&width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/foodworld.jpg?width=400   400w,
+                      ./images/foodworld.jpg?width=800   800w,
+                      ./images/foodworld.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <img
+                    width="357"
+                    height="301"
+                    src="./images/foodworld.jpg"
+                    alt="food world"
+                  />
+                </picture>
+                <div class="block-featured-restaurants">
+                  <img
+                    width="64"
+                    height="64"
+                    src="./images/svg/foodworld.svg"
+                  />
+                  <div>
+                    <p>Foodworld</p>
+                    <div class="flex-style">
+                      <svg width="25" height="23">
+                        <use href="./images/svg/sprite.svg#star"></use>
+                      </svg>
+                      <p class="style-weight">46</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="style-open-tomorow">Opens tomorrow</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="sticker-block">
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#discount"></use>
+                    </svg>
+                    <p>15% off</p>
+                  </div>
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#time"></use>
+                    </svg>
+                    <p>Fast</p>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/pizzahub.jpg?width=400   400w,
+                      ./images/pizzahub.jpg?width=800   800w,
+                      ./images/pizzahub.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/pizzahub.jpg?as=avif&width=400   400w,
+                      ./images/pizzahub.jpg?as=avif&width=800   800w,
+                      ./images/pizzahub.jpg?as=avif&width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/pizzahub.jpg?width=400   400w,
+                      ./images/pizzahub.jpg?width=800   800w,
+                      ./images/pizzahub.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <img
+                    width="357"
+                    height="301"
+                    src="./images/pizzahub.jpg"
+                    alt="food world"
+                  />
+                </picture>
+                <div class="block-featured-restaurants">
+                  <img width="64" height="64" src="./images/svg/pizza.svg" />
+                  <div>
+                    <p>Pizzahub</p>
+                    <div class="flex-style">
+                      <svg width="25" height="23">
+                        <use href="./images/svg/sprite.svg#star"></use>
+                      </svg>
+                      <p class="style-weight">40</p>
+                    </div>
+                  </div>
+                </div>
+                <p class="style-open-tomorow">Opens tomorrow</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="sticker-block">
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#discount"></use>
+                    </svg>
+                    <p>10% off</p>
+                  </div>
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#time"></use>
+                    </svg>
+                    <p>Fast</p>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/donutshut.jpg?width=400   400w,
+                      ./images/donutshut.jpg?width=800   800w,
+                      ./images/donutshut.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/donutshut.jpg?as=avif&width=400   400w,
+                      ./images/donutshut.jpg?as=avif&width=800   800w,
+                      ./images/donutshut.jpg?as=avif&width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/donutshut.jpg?width=400   400w,
+                      ./images/donutshut.jpg?width=800   800w,
+                      ./images/donutshut.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <img
+                    width="357"
+                    height="301"
+                    src="./images/donutshut.jpg"
+                    alt="food world"
+                  />
+                </picture>
+                <div class="block-featured-restaurants">
+                  <img
+                    width="64"
+                    height="64"
+                    src="./images/svg/donutshunt.svg"
+                  />
+                  <div>
+                    <p>Donuts hut</p>
+                    <div class="flex-style">
+                      <svg width="25" height="23">
+                        <use href="./images/svg/sprite.svg#star"></use>
+                      </svg>
+                      <p class="style-weight">20</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Open Now</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="sticker-block">
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#discount"></use>
+                    </svg>
+                    <p>15% off</p>
+                  </div>
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#time"></use>
+                    </svg>
+                    <p>Fast</p>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/subway.jpg?width=400   400w,
+                      ./images/subway.jpg?width=800   800w,
+                      ./images/subway.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/subway.jpg?as=avif&width=400   400w,
+                      ./images/subway.jpg?as=avif&width=800   800w,
+                      ./images/subway.jpg?as=avif&width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/subway.jpg?width=400   400w,
+                      ./images/subway.jpg?width=800   800w,
+                      ./images/subway.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <img
+                    width="357"
+                    height="301"
+                    src="./images/subway.jpg"
+                    alt="food world"
+                  />
+                </picture>
+                <div class="block-featured-restaurants">
+                  <img width="64" height="64" src="./images/svg/subway.svg" />
+                  <div>
+                    <p>SubWay</p>
+                    <div class="flex-style">
+                      <svg width="25" height="23">
+                        <use href="./images/svg/sprite.svg#star"></use>
+                      </svg>
+                      <p class="style-weight">50</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Open Now</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="sticker-block">
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#discount"></use>
+                    </svg>
+                    <p>10% off</p>
+                  </div>
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#time"></use>
+                    </svg>
+                    <p>Fast</p>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/rubytuesday.jpg?width=400   400w,
+                      ./images/rubytuesday.jpg?width=800   800w,
+                      ./images/rubytuesday.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/rubytuesday.jpg?as=avif&width=400   400w,
+                      ./images/rubytuesday.jpg?as=avif&width=800   800w,
+                      ./images/rubytuesday.jpg?as=avif&width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/rubytuesday.jpg?width=400   400w,
+                      ./images/rubytuesday.jpg?width=800   800w,
+                      ./images/rubytuesday.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <img
+                    width="357"
+                    height="301"
+                    src="./images/rubytuesday.jpg"
+                    alt="food world"
+                  />
+                </picture>
+                <div class="block-featured-restaurants">
+                  <img
+                    width="64"
+                    height="64"
+                    src="./images/svg/ruby-tuesday.svg"
+                  />
+                  <div>
+                    <p>Ruby Tuesday</p>
+                    <div class="flex-style">
+                      <svg width="25" height="23">
+                        <use href="./images/svg/sprite.svg#star"></use>
+                      </svg>
+                      <p class="style-weight">26</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Open Now</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="sticker-block">
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#discount"></use>
+                    </svg>
+                    <p>25% off</p>
+                  </div>
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#time"></use>
+                    </svg>
+                    <p>Fast</p>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/kfc.jpg?width=400   400w,
+                      ./images/kfc.jpg?width=800   800w,
+                      ./images/kfc.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/kfc.jpg?as=avif&width=400   400w,
+                      ./images/kfc.jpg?as=avif&width=800   800w,
+                      ./images/kfc.jpg?as=avif&width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/kfc.jpg?width=400   400w,
+                      ./images/kfc.jpg?width=800   800w,
+                      ./images/kfc.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <img
+                    width="357"
+                    height="301"
+                    src="./images/kfc.jpg"
+                    alt="food world"
+                  />
+                </picture>
+                <div class="block-featured-restaurants">
+                  <img width="64" height="64" src="./images/svg/kfc.svg" />
+                  <div>
+                    <p>Kuakata Fried Chicken</p>
+                    <div class="flex-style">
+                      <svg width="25" height="23">
+                        <use href="./images/svg/sprite.svg#star"></use>
+                      </svg>
+                      <p class="style-weight">53</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Open Now</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="sticker-block">
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#discount"></use>
+                    </svg>
+                    <p>10% off</p>
+                  </div>
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#time"></use>
+                    </svg>
+                    <p>Fast</p>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/redsquare.jpg?width=400   400w,
+                      ./images/redsquare.jpg?width=800   800w,
+                      ./images/redsquare.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/redsquare.jpg?as=avif&width=400   400w,
+                      ./images/redsquare.jpg?as=avif&width=800   800w,
+                      ./images/redsquare.jpg?as=avif&width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/redsquare.jpg?width=400   400w,
+                      ./images/redsquare.jpg?width=800   800w,
+                      ./images/redsquare.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <img
+                    width="357"
+                    height="301"
+                    src="./images/redsquare.jpg"
+                    alt="food world"
+                  />
+                </picture>
+                <div class="block-featured-restaurants">
+                  <img
+                    width="64"
+                    height="64"
+                    src="./images/svg/redsquare.svg"
+                  />
+                  <div>
+                    <p>Red Square</p>
+                    <div class="flex-style">
+                      <svg width="25" height="23">
+                        <use href="./images/svg/sprite.svg#star"></use>
+                      </svg>
+                      <p class="style-weight">45</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Open Now</p>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <div class="sticker-block">
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#discount"></use>
+                    </svg>
+                    <p>10% off</p>
+                  </div>
+                  <div>
+                    <svg width="18" height="22">
+                      <use href="./images/svg/sprite.svg#time"></use>
+                    </svg>
+                    <p>Fast</p>
+                  </div>
+                </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/tacobell.jpg?width=400   400w,
+                      ./images/tacobell.jpg?width=800   800w,
+                      ./images/tacobell.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <source
+                    srcset="
+                      ./images/tacobell.jpg?as=avif&width=400   400w,
+                      ./images/tacobell.jpg?as=avif&width=800   800w,
+                      ./images/tacobell.jpg?as=avif&width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="avif"
+                  />
+                  <source
+                    srcset="
+                      ./images/tacobell.jpg?width=400   400w,
+                      ./images/tacobell.jpg?width=800   800w,
+                      ./images/tacobell.jpg?width=1600 1600w
+                    "
+                    sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                    type="jpg"
+                  />
+                  <img
+                    width="357"
+                    height="301"
+                    src="./images/tacobell.jpg"
+                    alt="food world"
+                  />
+                </picture>
+                <div class="block-featured-restaurants">
+                  <img width="64" height="64" src="./images/svg/tacobell.svg" />
+                  <div>
+                    <p>Taco Bell</p>
+                    <div class="flex-style">
+                      <svg width="25" height="23">
+                        <use href="./images/svg/sprite.svg#star"></use>
+                      </svg>
+                      <p class="style-weight">50</p>
+                    </div>
+                  </div>
+                </div>
+                <p>Open Now</p>
+              </a>
+            </li>
+          </ul>
+          <button class="btn-view-all" type="button">
+            View All
+            <svg width="9" height="14">
+              <use href="./images/svg/sprite.svg#arrowright"></use>
+            </svg>
+          </button>
+        </div>
+      </section>
+      <section>
+        <div class="section-search-by-food">
+        <div class="bakground-first-block">
+          <div class="container first-block">
+            <div class="search-by-food-box">
+              <h3>Search by Food</h3>
+              <div class="controller">
+                <a href="#">
+                  View All
+                  <svg width="9" height="14">
+                    <use href="./images/svg/sprite.svg#arrowright"></use>
+                  </svg>
+                </a>
+                <div class="controller-btn">
+                  <div class="search-swiper-button-prev"></div>
+                  <div class="search-swiper-button-next"></div>
+                </div>
+              </div>
+            </div>
+            <div class="search-swiper">
+              <ul class="list-search-by-food swiper-wrapper">
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/pizza.jpg?width=400   400w,
+                          ./images/pizza.jpg?width=800   800w,
+                          ./images/pizza.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/pizza.jpg?as=avif&width=400   400w,
+                          ./images/pizza.jpg?as=avif&width=800   800w,
+                          ./images/pizza.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/pizza.jpg?as=webp&width=400   400w,
+                          ./images/pizza.jpg?as=webp&width=800   800w,
+                          ./images/pizza.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/webm"
+                      />
+
+                      <img
+                        width="218"
+                        height="218"
+                        src="./images/pizza.jpg?width=400"
+                        alt="pizza"
+                      />
+                    </picture>
+                    <p>Pizza</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/steak.jpg?width=400   400w,
+                          ./images/steak.jpg?width=800   800w,
+                          ./images/steak.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/steak.jpg?as=avif&width=400   400w,
+                          ./images/steak.jpg?as=avif&width=800   800w,
+                          ./images/steak.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/steak.jpg?as=webp&width=400   400w,
+                          ./images/steak.jpg?as=webp&width=800   800w,
+                          ./images/steak.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/webm"
+                      />
+
+                      <img
+                        width="218"
+                        height="218"
+                        src="./images/steak.jpg?width=400"
+                        alt="pizza"
+                      />
+                    </picture>
+                    <p>Steak</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/burger.jpg?width=400   400w,
+                          ./images/burger.jpg?width=800   800w,
+                          ./images/burger.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/burger.jpg?as=avif&width=400   400w,
+                          ./images/burger.jpg?as=avif&width=800   800w,
+                          ./images/burger.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/burger.jpg?as=webp&width=400   400w,
+                          ./images/burger.jpg?as=webp&width=800   800w,
+                          ./images/burger.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/webm"
+                      />
+
+                      <img
+                        width="218"
+                        height="218"
+                        src="./images/pizza.jpg?width=400"
+                        alt="pizza"
+                      />
+                    </picture>
+                    <p>Burger</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/noodles.jpg?width=400   400w,
+                          ./images/noodles.jpg?width=800   800w,
+                          ./images/noodles.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/noodles.jpg?as=avif&width=400   400w,
+                          ./images/noodles.jpg?as=avif&width=800   800w,
+                          ./images/noodles.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/noodles.jpg?as=webp&width=400   400w,
+                          ./images/noodles.jpg?as=webp&width=800   800w,
+                          ./images/noodles.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/webm"
+                      />
+
+                      <img
+                        width="218"
+                        height="218"
+                        src="./images/noodles.jpg?width=400"
+                        alt="pizza"
+                      />
+                    </picture>
+                    <p>Noodles</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/sub-sandwich.jpg?width=400   400w,
+                          ./images/sub-sandwich.jpg?width=800   800w,
+                          ./images/sub-sandwich.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/sub-sandwich.jpg?as=avif&width=400   400w,
+                          ./images/sub-sandwich.jpg?as=avif&width=800   800w,
+                          ./images/sub-sandwich.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/sub-sandwich.jpg?as=webp&width=400   400w,
+                          ./images/sub-sandwich.jpg?as=webp&width=800   800w,
+                          ./images/sub-sandwich.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/webm"
+                      />
+
+                      <img
+                        width="218"
+                        height="218"
+                        src="./images/sub-sandwich.jpg?width=400"
+                        alt="pizza"
+                      />
+                    </picture>
+                    <p>Sub-sandwich</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/chowmein.jpg?width=400   400w,
+                          ./images/chowmein.jpg?width=800   800w,
+                          ./images/chowmein.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/chowmein.jpg?as=avif&width=400   400w,
+                          ./images/chowmein.jpg?as=avif&width=800   800w,
+                          ./images/chowmein.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/chowmein.jpg?as=webp&width=400   400w,
+                          ./images/chowmein.jpg?as=webp&width=800   800w,
+                          ./images/chowmein.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/webm"
+                      />
+
+                      <img
+                        width="218"
+                        height="218"
+                        src="./images/chowmein.jpg?width=400"
+                        alt="pizza"
+                      />
+                    </picture>
+                    <p>Chowmein</p>
+                  </a>
+                </li>
+                <li class="swiper-slide">
+                  <a href="#">
+                    <picture>
+                      <source
+                        srcset="
+                          ./images/steak.jpg?width=400   400w,
+                          ./images/steak.jpg?width=800   800w,
+                          ./images/steak.jpg?width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/jpg"
+                      />
+                      <source
+                        srcset="
+                          ./images/steak.jpg?as=avif&width=400   400w,
+                          ./images/steak.jpg?as=avif&width=800   800w,
+                          ./images/steak.jpg?as=avif&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/avif"
+                      />
+                      <source
+                        srcset="
+                          ./images/steak.jpg?as=webp&width=400   400w,
+                          ./images/steak.jpg?as=webp&width=800   800w,
+                          ./images/steak.jpg?as=webp&width=1600 1600w
+                        "
+                        sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600p"
+                        type="type/webm"
+                      />
+
+                      <img
+                        width="218"
+                        height="218"
+                        src="./images/steak.jpg?width=400"
+                        alt="pizza"
+                      />
+                    </picture>
+                    <p>Steak</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="bakground-second-block">
+          <div class="container second-block">
+            <ul class="list-about-our-work">
+              <li>
+                <img
+                  src="./images/svg/big-daily-discount.svg"
+                  alt="daily discount icon"
+                />
+                <p>
+                  Daily
+                  <br />
+                  Discounts
+                </p>
+              </li>
+              <li>
+                <svg width="3" height="96">
+                  <use href="./images/svg/sprite.svg#line-vertical"></use>
+                </svg>
+              </li>
+              <li>
+                <img
+                  src="./images/svg/big-live-traking.svg"
+                  alt="live traking icon"
+                />
+                <p>
+                  Live
+                  <br />
+                  Tracing
+                </p>
+              </li>
+              <li>
+                <svg width="3" height="96">
+                  <use href="./images/svg/sprite.svg#line-vertical"></use>
+                </svg>
+              </li>
+              <li>
+                <img
+                  src="./images/svg/big-quick-delivery.svg"
+                  alt="quick delivery icon"
+                />
+                <p>
+                  Quick
+                  <br />
+                  Delivery
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="bakground-third-block">
+          <div class="container third-block">
+            <div class="box">
+              <div></div>
+              <div class="second-box">
+                <h3>Install the app</h3>
+                <p>
+                  It's never been easier to order food. Look for the finest
+                  discounts and you'll be lost in a world of delectable food.
+                </p>
+                <div>
+                  <button type="button">
+                    <svg width="28" height="33">
+                      <use href="./images/svg/sprite.svg#googleplay"></use>
+                    </svg>
+                    <div class="wrapper-svg">
+                      <svg width="60" height="10">
+                        <use
+                          href="./images/svg/sprite.svg#get-it-on"></use></svg><svg width="128" height="27">
+                        <use href="./images/svg/sprite.svg#google-play"></use>
+                      </svg>
+                    </div>
+                  </button>
+                  <button type="button">
+                    <svg width="28" height="33">
+                      <use href="./images/svg/sprite.svg#apple"></use>
+                    </svg>
+                    <div class="wrapper-svg">
+                      <svg width="105" height="11">
+                        <use
+                          href="./images/svg/sprite.svg#download-on-the"></use></svg><svg width="113" height="25">
+                        <use href="./images/svg/sprite.svg#app-store"></use>
+                      </svg>
+                    </div>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bakground-bottom"></div>
+          <div class="border-bottom"></div>
+        </div>
+        </div>
+      </section>
+      <section>
+        <div class="container section-proces-oder">
+          <ul class="list-proces-oder">
+            <li>
+              <a href="#">
+              <div class="box-proces-oder">
+                <h3>Best deals <span> Crispy Sandwiches</span></h3>
+                <p>Enjoy the large size of sandwiches. Complete 
+                  perfect slice of sandwiches.</p>
+                  <button>Proceed to order <svg width="9" height="14"><use href="./images/svg/sprite.svg#arrowright"></use></svg></button>
+              </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/best-crispy.jpg?width=400   400w,
+                      ./images/best-crispy.jpg?width=800   800w,
+                      ./images/best-crispy.jpg?width=1600 1600w"
+                    sizes="(max-width: 600px) 400px, 
+                    (max-width: 1200px) 800px, 
+                    1600px"
+                    type="image/jpg"
+                  />
+                  <source 
+                  srcset="
+                  ./images/best-crispy.jpg?as=avif&width=400   400w,
+                  ./images/best-crispy.jpg?as=avif&width=800   800w,
+                  ./images/best-crispy.jpg?as=avif&width=1600 1600w"
+                sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                type="image/avif"
+                  />
+                  <source 
+                  srcset="
+                  ./images/best-crispy.jpg?as=webp&width=400   400w,
+                  ./images/best-crispy.jpg?as=webp&width=800   800w,
+                  ./images/best-crispy.jpg?as=webp&width=1600 1600w"
+                sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                type="image/webp"
+                  />
+                  <img src="./images/best-crispy.jpg?width=400" alt="Best deals Crispy Sandwiches" width="961" height="512" />
+                </picture>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <picture>
+                  <source
+                    srcset="
+                      ./images/fried-chicken.jpg?width=400   400w,
+                      ./images/fried-chicken.jpg?width=800   800w,
+                      ./images/fried-chicken.jpg?width=1600 1600w"
+                    sizes="(max-width: 600px) 400px, 
+                    (max-width: 1200px) 800px, 
+                    1600px"
+                    type="image/jpg"
+                  />
+                  <source 
+                  srcset="
+                  ./images/fried-chicken.jpg?as=avif&width=400   400w,
+                  ./images/fried-chicken.jpg?as=avif&width=800   800w,
+                  ./images/fried-chicken.jpg?as=avif&width=1600 1600w"
+                sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                type="image/avif"
+                  />
+                  <source 
+                  srcset="
+                  ./images/fried-chicken.jpg?as=webp&width=400   400w,
+                  ./images/fried-chicken.jpg?as=webp&width=800   800w,
+                  ./images/fried-chicken.jpg?as=webp&width=1600 1600w"
+                sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                type="image/webp"
+                  />
+                  <img src="./images/fried-chicken.jpg?width=400" alt="Best deals Crispy Sandwiches" width="961" height="512" />
+                </picture>
+                <div class="box-proces-oder">
+                  <h3>Best deals <span> Crispy Sandwiches</span></h3>
+                  <p>Enjoy the large size of sandwiches. Complete 
+                    perfect slice of sandwiches.</p>
+                    <button>Proceed to order <svg width="9" height="14"><use href="./images/svg/sprite.svg#arrowright"></use></svg></button>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+              <div class="box-proces-oder">
+                <h3>Best deals <span> Crispy Sandwiches</span></h3>
+                <p>Enjoy the large size of sandwiches. Complete 
+                  perfect slice of sandwiches.</p>
+                  <button>Proceed to order <svg width="9" height="14"><use href="./images/svg/sprite.svg#arrowright"></use></svg></button>
+              </div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/spicy-pizza.jpg?width=400   400w,
+                      ./images/spicy-pizza.jpg?width=800   800w,
+                      ./images/spicy-pizza.jpg?width=1600 1600w"
+                    sizes="(max-width: 600px) 400px, 
+                    (max-width: 1200px) 800px, 
+                    1600px"
+                    type="image/jpg"
+                  />
+                  <source 
+                  srcset="
+                  ./images/spicy-pizza.jpg?as=avif&width=400   400w,
+                  ./images/spicy-pizza.jpg?as=avif&width=800   800w,
+                  ./images/spicy-pizza.jpg?as=avif&width=1600 1600w"
+                sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                type="image/avif"
+                  />
+                  <source 
+                  srcset="
+                  ./images/spicy-pizza.jpg?as=webp&width=400   400w,
+                  ./images/spicy-pizza.jpg?as=webp&width=800   800w,
+                  ./images/spicy-pizza.jpg?as=webp&width=1600 1600w"
+                sizes="(max-width: 600px) 400px, 
+                (max-width: 1200px) 800px, 
+                1600px"
+                type="image/webp"
+                  />
+                  <img src="./images/spicy-pizza.jpg?width=400" alt="Best deals Crispy Sandwiches" width="961" height="512" />
+                </picture>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section-ready-to-order">
+          <div class="ready-to-order container">
+            <h3>Are you ready to order with<br /> the best deals?</h3>
+            <button>Proceed to order <svg width="9" height="14"><use href="./images/svg/sprite.svg#arrowright"></use></svg></button>
+          </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <section class="container section-first-footer">
+        <h3>Our top cities</h3>
+      <ul class="list-column-cities">
+        <li><ul class="list-cities">
+          <li><a href="#"><p>San Francisco</p></a></li>
+          <li><a href="#"><p>Miami</p></a></li>
+          <li><a href="#"><p>San Diego</p></a></li>
+          <li><a href="#"><p>East Bay</p></a></li>
+          <li><a href="#"><p>Long Beach</p></a></li>
+        </ul>
+      </li>
+        <li>
+          <ul class="list-cities">
+            <li><a href="#"><p>Los Angeles</p></a></li>
+            <li><a href="#"><p>Washington DC</p></a></li>
+            <li><a href="#"><p>Seattle</p></a></li>
+            <li><a href="#"><p>Portland</p></a></li>
+            <li><a href="#"><p>Nashville</p></a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="list-cities">
+            <li><a href="#"><p>New York City</p></a></li>
+            <li><a href="#"><p>Orange County</p></a></li>
+            <li><a href="#"><p>Atlanta</p></a></li>
+            <li><a href="#"><p>Charlotte</p></a></li>
+            <li><a href="#"><p>Denver</p></a></li>
+          </ul>
+        </li>
+        <li>
+          <ul class="list-cities">
+            <li><a href="#"><p>Chicago</p></a></li>
+            <li><a href="#"><p>Phoenix</p></a></li>
+            <li><a href="#"><p>Las Vegas</p></a></li>
+            <li><a href="#"><p>Sacramento</p></a></li>
+            <li><a href="#"><p>Oklahoma City</p></a></li>  
+          </ul>
+        </li>
+        <li>
+          <ul class="list-cities">
+            <li><a href="#"><p>Columbus</p></a></li>
+            <li><a href="#"><p>New Mexico</p></a></li>
+            <li><a href="#"><p>Albuquerque</p></a></li>
+            <li><a href="#"><p>Charlotte</p></a></li>
+            <li><a href="#"><p>Sacramento</p></a></li>
+          </ul>
+        </li>
+      </ul>
+      </section>
+      <section class="container section-second-footer">
+        <ul class="list-column-menu">
+       <li>
+        <ul class="list-menu">
+          <li>
+            <h3>Company</h3>
+          </li>
+          <li>
+            <a href="#"><p>About us</p></a>
+          </li>
+          <li>
+            <a href="#"><p>Team</p></a>
+          </li>
+          <li>
+            <a href="#"><p>Careers</p></a>
+          </li>
+          <li>
+            <a href="#"><p>Blog</p></a>
+          </li>
+        </ul>
+       </li>
+       <li>
+        <ul class="list-menu">
+        <li>
+          <h3>Contact</h3>
+        </li>
+        <li>
+          <a href="#"><p>Help & Support</p></a>
+        </li>
+        <li>
+          <a href="#"><p>Partner with us </p></a>
+        </li>
+        <li>
+          <a href="#"><p>Ride with us</p></a>
+        </li>
+        </ul>
+       </li>
+       <li>
+        <ul class="list-menu">#
+        <li>
+          <h3>Legal</h3>
+        </li>
+        <li>
+          <a href="#"><p>Terms & Conditions</p></a>
+        </li>
+        <li>
+          <a href="#"><p>Refund & Cancellation</p></a>
+        </li>
+        <li>
+          <a href="#"><p>Privacy Policy</p></a>
+        </li>
+        <li>
+          <a href="#"><p>Cookie Policy</p></a>
+        </li>
+        </ul>
+       </li>
+        </ul>
+        <div class="box-follow-us">
+          <h3>Follow Us</h3>
+          <ul class="list-social-icons">
+            <li><a href="#"><svg width="21" height="24"><use href="./images/svg/sprite.svg#instagram"></use></svg></a></li>
+            <li><a href="#"><svg width="21" height="24"><use href="./images/svg/sprite.svg#fackebook"></use></svg></a></li>
+            <li><a href="#"><svg width="21" height="24"><use href="./images/svg/sprite.svg#twitter"></use></svg></a></li>
+          </ul>
+          <p>Receive exclusive offers in your mailbox</p>
+          <form class="form-follow-us">
+            <label>
+              <svg width="24" height="19"><use href="./images/svg/sprite.svg#email"></use></svg>
+            <input type="email" name="email" placeholder="Enter Your email">
+          </label>
+          <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </section>
+      <section class="container section-third-footer">
+        <div class="left-box">
+          <p>All rights Reserved</p><span></span><a target="_blank" href="https://github.com/Yurii-Ilkevych">Yurii Ilkevych, 2024</a>
+        </div>
+
+        <div class="right-box">
+         <p>Made with <span role="img" aria-label="love"><svg width="15" height="12"><use href="./images/svg/sprite.svg#like"></use></svg></span> by</p><a target="_blank" href="https://themewagon.com/">Themewagon</a>
+        </div>
+      </section>
+    </footer>
+    <script type="module" src="./index.js"></script>
+  </body>
 </html>
