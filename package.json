@@ -5,7 +5,7 @@
   "source": "src/index.html",
   "scripts": {
     "start": "parcel src/index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "parcel build src/index.html --public-url ./"
   },
   "author": "Yurii Ilkevych (rufiktcl@gmail.com)",
   "license": "ISC",
